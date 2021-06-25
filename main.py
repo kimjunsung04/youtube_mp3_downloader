@@ -5,7 +5,7 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from oauth2client.tools import argparser
 
-url = input("다운받을 유뷰브 링크 or 영상제목을 입력해주세요 : ")
+url = input("다운받을 유튜브 링크 or 영상제목을 입력해주세요 : ")
 
 if "http" in url:
     ydl = youtube_dl.YoutubeDL({"outtmpl": "%(id)s%(ext)s"})
